@@ -1,0 +1,26 @@
+% Referência - http://cs231n.github.io/convolutional-networks/
+
+\section{Construção do Modelo}
+
+As Redes Convolucionais Neurais - RCN, tomam vantagem do fato de que a sua entrada é uma imagem para limitar sensivelmente sua arquitetura. Que diferentemente de Redes Neurais Artificiais - RNA comuns, possuem neurônios organizados em três dimensões, largura, altura e profundidade. Além disso, neurônios de uma determinada camada estão conectados apenas a uma pequena região da camada anterior, e assim percebe-se que suas camadas são sequenciais.
+
+As arquiteturas de RCN possuem três tipos principais de camadas, são elas: Convolucional, \textit{Pooling} e RNA completamente conectada. Que juntas são empilhadas para formar uma arquitetura completa de RCN. Cada camada tem sua função específica e bem definida na arquitetura. As camadas Convolucionais tem por finalidade extrair características da imagem, como bordas, contornos, texturas e etc. As camadas de \textit{Pooling} são as responsáveis por afunilar as informações das camada anterior, tanto para reduzir o custo computacional dos cálculos, quanto para diminuir o número de características a serem processadas para a próxima camada, tentando assim diminuir o conjunto de características relevantes da imagem. A última camada, a de RNA completamente conectada, consiste da generalização das características extraídas pelas camadas anteriores.
+
+% Tópicos
+% 1. Funções de ativação
+%     1.1 Nas camadas convolucionais
+%     1.2 Nas camadas de FC
+% 2. Inicialização dos pesos das camadas convolucionais
+% 3. Tamanho dos kerneis das camadas convolucionais
+% 4. Tipos de Pooling
+% 5. Quantidade de camadas antes do pooling
+%     5.1 quanto maior a quantidade, mais aprende, mas depois estagna
+%     5.2 citar o que a litetatura recomenda
+%     5.3. citar que é semelhante a arquitetura VGG
+% 6. Uso de regularizadores não se mostrou bom
+%     6.1 tanto l1, l2, como l1_l2
+% 7. Evidenciar regras utilizadas para criação das camadas de FC
+% 8. Dropout
+
+\input{sections/tables/tbl_archs.tex}
+\input{sections/tables/tbl_fscore.tex}

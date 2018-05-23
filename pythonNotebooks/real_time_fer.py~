@@ -1,0 +1,55 @@
+# Avoid warning on screen - START
+import warnings
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+####################### Used packages - START
+
+import tensorflow as tf
+import cv2
+import numpy as np
+from keras.models import load_model
+
+####################### Used packages - END
+
+# Avoid warning on screen - END
+warnings.resetwarnings()
+os.system("clear")
+
+if "/device:GPU:0" != tf.test.gpu_device_name():
+    raise "GPU NOT SUPPORTED"
+
+def fbeta(y_true, y_pred, threshold_shift=0):
+    beta = 0.5
+
+    # just in case of hipster activation at the final layer
+    y_pred = K.clip(y_pred, 0, 1)
+
+    # shifting the prediction threshold from .5 if needed
+    y_pred_bin = K.round(y_pred + threshold_shift)
+
+    tp = K.sum(K.round(y_true * y_pred_bin), axis=1) + K.epsilon()
+    fp = K.sum(K.round(K.clip(y_pred_bin - y_true, 0, 1)), axis=1)
+    fn = K.sum(K.round(K.clip(y_true - y_pred, 0, 1)), axis=1)
+
+    precision = tp / (tp + fp)
+    recall = tp / (tp + fn)
+
+    beta_squared = beta ** 2
+    return K.mean((beta_squared + 1) * (precision * recall) / (beta_squared * precision + recall + K.epsilon()))
+
+# Models location
+face_model = "haarcascade_frontalface_default.xml"
+expression_model = "../trained_models/f1_69_acc_63/cnn_f1_69_acc_65.json"
+expression_model_weights = "../trained_models/f1_69_acc_63/cnn_f1_69_acc_65_weights.h5"
+
+# Load face_model
+print("> Load face_model...", end='')
+face_detection = cv2.CascadeClassifier(face_model)
+print("done")
+
+# Load emotion_model_archtecture
+print("> Load emotion_model_archtecture...")
+emotion_detection = load_model(expression_model_weights, custom_objects={'fbeta': fbeta})
+print("done")

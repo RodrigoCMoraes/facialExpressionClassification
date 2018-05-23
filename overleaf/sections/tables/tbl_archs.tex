@@ -1,0 +1,53 @@
+\begin{table}
+\centering
+\caption{Arquiteturas utilizadas}
+\label{tbl-arch}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllllll@{}}
+\toprule
+\multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} & \multicolumn{1}{c}{7} & \multicolumn{1}{c}{8} & \multicolumn{1}{c}{9} \\ \midrule
+Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(128, 7, 7)   & Conv2D\_(16, 7, 7)    & Conv2D\_(16, 7, 7)    \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             \\
+Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    & Conv2D\_(128, 7, 7)   & Conv2D\_(16, 7, 7)    & Conv2D\_(16, 7, 7)    \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             \\
+MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       \\
+Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           \\
+Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 5, 5)   & Conv2D\_(32, 3, 3)    & Conv2D\_(32, 3, 3)    \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             \\
+Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 5, 5)   & Conv2D\_(32, 3, 3)    & Conv2D\_(32, 3, 3)    \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             \\
+MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       \\
+Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           \\
+Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             \\
+Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(64, 3, 3)    & Conv2D\_(64, 3, 3)    \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             \\
+Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & Conv2D\_(256, 3, 3)   & MaxPool\_(3, 3)       & Conv2D\_(256, 3, 3)   & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       \\
+BatchNorm             & BatchNorm             & BatchNorm             & BatchNorm             & Dropout\_50           & BatchNorm             & Dropout\_50           & Dropout\_50           & Dropout\_50           \\
+MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & MaxPool\_(3, 3)       & Flatten               & MaxPool\_(3, 3)       & Conv2D\_(256, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   \\
+Dropout\_50           & Dropout\_50           & Dropout\_50           & Dropout\_50           & FC\_(128)             & Dropout\_50           & BatchNorm             & BatchNorm             & BatchNorm             \\
+Conv2D\_(512, 3, 3)   & Flatten               & Flatten               & Flatten               & Dropout\_20           & Flatten               & Conv2D\_(256, 3, 3)   & Conv2D\_(128, 3, 3)   & Conv2D\_(128, 3, 3)   \\
+BatchNorm             & FC\_(128)             & FC\_(512)             & FC\_(128)             & FC\_(64)              & FC\_(128)             & BatchNorm             & BatchNorm             & BatchNorm             \\
+Conv2D\_(512, 3, 3)   & Dropout\_20           & Dropout\_50           & Dropout\_20           & Dropout\_20           & Dropout\_20           & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       & AvgPool\_(3, 3)       \\
+BatchNorm             & FC\_(64)              & FC\_(512)             & FC\_(64)              & FC\_(32)              & FC\_(64)              & Dropout\_50           & Dropout\_50           & Dropout\_50           \\
+Conv2D\_(512, 3, 3)   & Dropout\_20           & Dropout\_50           & Dropout\_20           & Dropout\_20           & Dropout\_20           & Flatten               & Flatten               & Flatten               \\
+BatchNorm             & FC\_(7)               & FC\_(7)               & FC\_(7)               & FC\_(7)               & FC\_(32)              & FC\_(1048)            & FC\_(512)             & FC\_(512)             \\
+MaxPool\_(3, 3)       &                       &                       &                       &                       & Dropout\_20           & Dropout\_20           & Dropout\_20           & Dropout\_50           \\
+Dropout\_50           &                       &                       &                       &                       & FC\_(7)               & FC\_(512)             & FC\_(512)             & FC\_(512)             \\
+Conv2D\_(512, 3, 3)   &                       &                       &                       &                       &                       & Dropout\_20           & Dropout\_20           & Dropout\_20           \\
+BatchNorm             &                       &                       &                       &                       &                       & FC\_(7)               & FC\_(7)               & FC\_(7)               \\
+Conv2D\_(512, 3, 3)   &                       &                       &                       &                       &                       &                       &                       &                       \\
+BatchNorm             &                       &                       &                       &                       &                       &                       &                       &                       \\
+Conv2D\_(512, 3, 3)   &                       &                       &                       &                       &                       &                       &                       &                       \\
+BatchNorm             &                       &                       &                       &                       &                       &                       &                       &                       \\
+MaxPool\_(3, 3)       &                       &                       &                       &                       &                       &                       &                       &                       \\
+Dropout\_50           &                       &                       &                       &                       &                       &                       &                       &                       \\
+Flatten               &                       &                       &                       &                       &                       &                       &                       &                       \\
+FC\_(512)             &                       &                       &                       &                       &                       &                       &                       &                       \\
+Dropout\_20           &                       &                       &                       &                       &                       &                       &                       &                       \\
+FC\_(512)             &                       &                       &                       &                       &                       &                       &                       &                       \\
+Dropout\_20           &                       &                       &                       &                       &                       &                       &                       &                       \\
+FC\_(7)               &                       &                       &                       &                       &                       &                       &                       &                       \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
