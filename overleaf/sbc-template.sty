@@ -6,21 +6,21 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{sbc-template}[2001/06/09]
 
-% margem sup 3.5 cm: h? 1,5 cm para header, + 2 cm para top
-% margem inf 2.5 cm: h? 1,5 cm para foot, + 1 cm para bottom
+% margem sup 3.5 cm: há 1,5 cm para header, + 2 cm para top
+% margem inf 2.5 cm: há 1,5 cm para foot, + 1 cm para bottom
 % margem esq/dir 3 cm
-\RequirePackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\RequirePackage[a4paper,top=3.2cm,left=3cm,right=3cm,bottom=2.3cm]{geometry}
 
-\parindent 1.27cm
-\parskip   6pt
+\parindent 1.1cm
+\parskip   3pt
 
 \flushbottom
 
 % captions
-\RequirePackage[bf,sf,footnotesize,indent]{caption2}
-\setlength{\captionmargin}{0.8cm}
-\renewcommand{\captionfont}{\sffamily\footnotesize\bfseries}
-\renewcommand{\captionlabeldelim}{.}
+%\RequirePackage[bf,sf,footnotesize,indent]{caption2}
+%\setlength{\captionmargin}{0.8cm}
+%\renewcommand{\captionfont}{\sffamily\footnotesize\bfseries}
+%\renewcommand{\captionlabeldelim}{.}
 
 % font
 \RequirePackage{times}
@@ -129,9 +129,9 @@
  \begin{center}
    %\vglue -6pt
 %   \vspace*{12pt}
-\vspace*{-.7cm}
+\vspace*{-1cm}
   {\XVIPT\bf\@title\par}
-   \vglue 6pt plus 3pt minus 3pt
+  \vglue 6pt plus 3pt minus 3pt
   {\normalsize
    \textbf{\begin{tabular}[t]{c}\@author\end{tabular}}\par}
    \vglue 6pt plus 3pt minus 3pt
