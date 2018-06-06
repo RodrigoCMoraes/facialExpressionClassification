@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[Brink et~al. 2017]{Brink:MachineLearningLivro}
+Brink, H., Richards, J.~W., and Fetherolf, M. (2017).
+\newblock {\em Real-World Machine Learning}.
+\newblock Manning Publications, Estados Unidos.
+
+\bibitem[Kaggle 2013]{Kaggle:FER2013}
+Kaggle (2013).
+\newblock Challenges in representation learning: Facial expression recognition
+  challenge.
+
+\bibitem[Kubat 2015]{Kubat:Livro}
+Kubat, M. (2015).
+\newblock {\em An Introduction to Machine Learning}.
+\newblock Springer, Estados Unidos.
+
+\end{thebibliography}

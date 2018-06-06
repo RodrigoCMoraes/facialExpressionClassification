@@ -4,15 +4,28 @@
 \usepackage{booktabs}
 \usepackage{graphicx,url}
 \usepackage{hyperref}
-%\usepackage[brazil]{babel}   
-\usepackage[utf8]{inputenc}  
+%\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
 
-     
+%% Comandos para comentários -- elloa
+\usepackage{xcolor}
+\definecolor{lightblue}{RGB}{0,191,255}
+\usepackage[textsize=tiny,backgroundcolor=lightblue,linecolor=lightblue]{todonotes}
+%%%%%% Subfiguras -- elloa
+\usepackage[bf,sf,footnotesize,indent,justification=centering]{caption}
+\usepackage[caption=true,font=footnotesize]{subfig}
+\captionsetup[subfigure]{justification=centering,labelfont={bf,sf},textfont={bf,sf,footnotesize},singlelinecheck=off,justification=centering}
+\captionsetup[figure]{justification=centering,labelfont={bf,sf},textfont={bf,sf,footnotesize},singlelinecheck=off}
+\captionsetup[table]{justification=centering,labelfont={bf,sf},textfont={bf,sf,footnotesize},singlelinecheck=off,justification=centering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \sloppy
 
-\title{Não definido}
+\title{Reconhecimento Automático de Expressões Faciais para Aplicações em Vitrinismo}
 
-\author{Rodrigo C. Moraes, Maurício C. Figueiredo, Elloá B. Guedes \email{\{rcm, cfigueiredo, ebgcosta\}.eng@uea.edu.br}
+\author{Rodrigo C. Moraes, Carlos Maurício S. Figueiredo, Elloá B. Guedes \email{\{rcm, cfigueiredo, ebgcosta\}.eng@uea.edu.br}
 }
 
 \address{Núcleo de Computação\\
@@ -21,19 +34,36 @@ Universidade do Estado do Amazonas\\
 Av. Darcy Vargas, 1200 -- Manaus -- Amazonas
 }
 
-\begin{document} 
+\begin{document}
 
 \maketitle
 
 \input{sections/abstract.tex}
 \input{sections/resumo.tex}
+
+\section{Introdução}
 \input{sections/introduction.tex}
+
+
+
+\section{Materiais e Métodos}
 \input{sections/methods.tex}
+
+\section{Trabalhos Relacionados}
+\input{sections/related}
+
+\section{Resultados e Discussões}
 \input{sections/results.tex}
+
+\section{Considerações Finais}
 \input{sections/conclusion.tex}
 
 % TODO - Alterar título das referências de References para Referências
 % TODO - Alterar título das Figuras de Figure para Figuras
 % TODO - Alterar título das Tabelas de Table para Tabela
+% SOLVED - Era só colocar o babel em português! Favor apagar depois
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
 
 \end{document}

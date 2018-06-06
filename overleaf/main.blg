@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: sbc.bst
+Database file #1: sbc-template.bib
+Warning--entry type for "Kaggle:FER2013" isn't style-file defined
+--line 1 of file sbc-template.bib
+You've used 3 entries,
+            1935 wiz_defined-function locations,
+            489 strings with 4028 characters,
+and the built_in function-call counts, 881 in all, are:
+= -- 81
+> -- 32
+< -- 2
++ -- 12
+- -- 10
+* -- 61
+:= -- 170
+add.period$ -- 8
+call.type$ -- 3
+change.case$ -- 18
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 38
+empty$ -- 62
+format.name$ -- 13
+if$ -- 165
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 17
+num.names$ -- 9
+pop$ -- 21
+preamble$ -- 1
+purify$ -- 20
+quote$ -- 0
+skip$ -- 29
+stack$ -- 0
+substring$ -- 38
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 38
+(There was 1 warning)
