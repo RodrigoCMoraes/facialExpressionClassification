@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1528344283 "main.aux" "main.bbl" "main" 1528344290
+["bibtex main"] 1528344609 "main.aux" "main.bbl" "main" 1528344635
   "./sbc.bst" 1528337725 21863 e2f961827e28074ef5a2bc27ccb7b310 ""
-  "main.aux" 1528344290 6621 26c15c37280a48b092ae7268e83e4002 ""
+  "main.aux" 1528344635 6621 26c15c37280a48b092ae7268e83e4002 ""
   "sbc-template.bib" 1528342988 1792 d5dec932c11b5fbc594cf5b96ddcad4c ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1528344284 "main.tex" "main.pdf" "main" 1528344290
+  "main.blg"
+["pdflatex"] 1528344630 "main.tex" "main.pdf" "main" 1528344635
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm" 1480098688 960 4ab65358b8406f30ef5496c8c096d22b ""
@@ -192,17 +192,17 @@
   "images/expression_distribution_training.png" 1528337725 122486 c4165a43cd7dd641cd92b0842b631b16 ""
   "images/expression_distribution_validation.png" 1528337725 123940 072279a47f37e797c5568743e76e4444 ""
   "images/samples.png" 1528337725 80849 b3a1d2784de73ed6f7c113073d552f10 ""
-  "main.aux" 1528344290 6621 26c15c37280a48b092ae7268e83e4002 ""
-  "main.bbl" 1528344284 1504 4c8ddfd2019aba87dd631031c98c03bc "bibtex main"
-  "main.out" 1528344290 595 fb3493eb1524c04bfea915a55a8a82f0 ""
-  "main.tex" 1528344269 2151 37e4fcc67c691df0cef09c9b22f50d58 ""
+  "main.aux" 1528344635 6621 26c15c37280a48b092ae7268e83e4002 ""
+  "main.bbl" 1528344610 1504 4c8ddfd2019aba87dd631031c98c03bc "bibtex main"
+  "main.out" 1528344635 595 fb3493eb1524c04bfea915a55a8a82f0 ""
+  "main.tex" 1528344630 2184 0975ea0ea1a425da093feea795dcb1c2 ""
   "sbc-template.sty" 1528337725 5446 d763dd3f5d2c477dc25ae460c39cd2af ""
   "sections/abstract.tex" 1528337725 38 092da7497be5c15c0e3cb47dc2cd192b ""
   "sections/conclusion.tex" 1528337725 7 9bde856d47a87d5e8604258a00a43706 ""
   "sections/introduction.tex" 1528337725 66 ee0ab75aa5d1dcea7bc427d13028ba39 ""
   "sections/methods.tex" 1528338257 265 0f98a8431861a77f449934fe9fae671a ""
   "sections/methods/dataset.tex" 1528339496 2130 39407a93183fa165d8dbd5da7ff4f3f7 ""
-  "sections/methods/model_construction.tex" 1528344267 7654 42f7ce759b79bd271b84b48e377e8dd5 ""
+  "sections/methods/model_construction.tex" 1528344363 7716 1151069102526ba2c84d0c67536b409f ""
   "sections/methods/model_evaluation.tex" 1528339131 3778 e528b15cf47e8b5f543daf94d3789eed ""
   "sections/related.tex" 1528337725 37 f98f704b7216bd4b8b2f8d73e5f1002e ""
   "sections/results.tex" 1528337725 2560 dead27c766aaf38f1d1d0eccd137d7c9 ""
@@ -210,7 +210,7 @@
   "tables/tbl_archs.tex" 1528337725 9532 6cd5704164b92103eea358a5fc6b2351 ""
   "tables/tbl_fscore.tex" 1528337725 522 1f5e1185c240ec9358bd407ecb94ef6d ""
   (generated)
-  "main.pdf"
-  "main.aux"
   "main.log"
+  "main.aux"
   "main.out"
+  "main.pdf"
