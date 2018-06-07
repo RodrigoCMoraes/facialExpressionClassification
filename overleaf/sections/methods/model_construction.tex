@@ -10,7 +10,7 @@ As adaptações da VGG-16 levaram em conta diferentes quantidades de repetiçõe
  &\quad \Rightarrow [\textrm{Fully Connected} \rightarrow \textrm{ReLu}]\cdot \ell \\
  &\quad \Rightarrow \textrm{Flatten} \Rightarrow \textrm{Camada de Saída},
 \end{split}
-\end{equation} em que $i, j, k, \ell$ são números inteiros que denotam a quantidade de repetições da operação associada perante multiplicação. Os valores destes inteiros foram: $i = 2$, $j = \{0,1\}$ (realização ou não das operações de Pooling e Dropout), $k = \{1,2\}$ e $\ell = \{ 1,2,3 \}$.\todo[inline]{Revisar estas repetições.}. Considerando esta abordagem de adaptação, foram então propostas $9$ CNNs diferentes a serem treinadas e testadas, conforme a abordagem de validação previamente descrita.
+\end{equation} em que $i, j, k, \ell$ são números inteiros que denotam a quantidade de repetições da operação associada perante multiplicação. Os valores destes inteiros foram: $i = 2$, $j = \{1, \ldots, 5\}$, $k = \{2, 3, 4\}$ e $\ell = \{ 1,2,3 \}$.\ Considerando esta abordagem de adaptação, foram então propostas $9$ CNNs diferentes a serem treinadas e testadas, conforme a abordagem de validação cruzada previamente descrita.
 
 % Complementar um pouco os parâmetros que você falou depois
 
@@ -24,7 +24,7 @@ Além da avaliação individual do desempenho das CNNs propostas, considerou-se 
 
 
 
-
+\iffalse
 O modelo proposto consiste de um conjunto de \emph{Convolutional Neural Networks} (CNN), onde cada elemento é responsável pela classificação da imagem de entrada em uma das Sete Expressões Faciais Universais \cite{}, por meio da produção de vetor de probabilidades. Que consiste na possibilidade de cada uma das expressões universais estarem sendo expressas pela face, na imagem. A determinação da classificação final, não segue as abordagens típicas da literatura, via maioria ou consenso. Pois, estes vetores de probabilidades foram utilizados, de maneira supervisionada, para treinar um modelo do tipo \emph{XGBoost}, que finalmente atribui o rótulo mais adequado à entrada. Tem-se então um \emph{emsemble} de CNN com processo decisório de classificação realizado de maneira não trivial por um modelo de \emph{Machine Learning}.
 
 O objetivo com a união de vários modelos de CNN foi obter classificadores bons de maneira geral em todas as expressões, contudo, estes deveriam se sobressair em determinadas expressões. Com isso, foram gerados sete modelos, um para cada expressão que deveriam ser classificadas, contudo, além dos sete classificadores bons individualmente na classificação de determinada expressão, adicionou-se dois outros, os quais obtiveram melhor desempenho considerando a classificação de todas as expressões, mas não obtiveram melhores resultados em determinada expressão em relação aos classificadores individuais.
@@ -46,3 +46,4 @@ A arquitetura final dos modelos de CNN podem ser visualizados na Tabela \ref{tbl
 \input{tables/tbl_archs.tex}
 
 % TODO: Lembrar de falar da infra-estrutura para execução.
+\fi
