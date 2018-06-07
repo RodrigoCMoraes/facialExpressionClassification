@@ -5,45 +5,45 @@ The style file: sbc.bst
 Database file #1: sbc-template.bib
 Warning--entry type for "Kaggle:FER2013" isn't style-file defined
 --line 1 of file sbc-template.bib
-You've used 3 entries,
+You've used 7 entries,
             1935 wiz_defined-function locations,
-            489 strings with 4028 characters,
-and the built_in function-call counts, 881 in all, are:
-= -- 81
-> -- 32
-< -- 2
-+ -- 12
-- -- 10
-* -- 61
-:= -- 170
-add.period$ -- 8
-call.type$ -- 3
-change.case$ -- 18
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 38
-empty$ -- 62
-format.name$ -- 13
-if$ -- 165
+            516 strings with 4725 characters,
+and the built_in function-call counts, 2431 in all, are:
+= -- 235
+> -- 88
+< -- 6
++ -- 32
+- -- 28
+* -- 175
+:= -- 431
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 46
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 111
+empty$ -- 179
+format.name$ -- 39
+if$ -- 485
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 17
-num.names$ -- 9
-pop$ -- 21
+missing$ -- 10
+newline$ -- 37
+num.names$ -- 21
+pop$ -- 55
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 49
 quote$ -- 0
-skip$ -- 29
+skip$ -- 80
 stack$ -- 0
-substring$ -- 38
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 120
+swap$ -- 15
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 34
 warning$ -- 0
-while$ -- 6
+while$ -- 17
 width$ -- 0
-write$ -- 38
+write$ -- 93
 (There was 1 warning)

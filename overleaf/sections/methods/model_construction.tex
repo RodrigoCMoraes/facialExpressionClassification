@@ -1,3 +1,29 @@
+Os modelos propostos e seus respectivos parâmetros e hiperparâmetros para a tarefa de classificação de expressões faciais são descritos detalhadamente ao longo desta seção.
+
+Seguindo a abordagem predominantemente adotada pelo estado da arte no tocante ao aprendizado de características em dados de alta dimensionalidade para tarefas de Visão Computacional \cite{Khan:Livro}, as redes neurais convolucionais foram o modelo de Aprendizado de Máquina adotado na tarefa elencada. Em particular, a arquitetura base foi a da rede neural convolucional canônica VGG-16 \cite{VGG}, mas com algumas adaptações. Esta arquietura originalmente proposta  destacou-se mediante a ideia de que uma rede neural precisa ter uma quantidade razoável  de camadas convolucionais profundas para uma representação hierárquica adequada das informações visuais.
+
+As adaptações da VGG-16 levaram em conta diferentes quantidades de repetições de certas operações, apresentadas de acordo com a seguinte ideia geral:
+\begin{equation}
+\begin{split}
+\textrm{Camada de Entrada} & \Rightarrow [ (\textrm{Convolução} \rightarrow \textrm{Batch Normalization})\cdot i\\
+ &\quad \Rightarrow (\textrm{Pooling} \rightarrow \textrm{Dropout})\cdot j]\cdot k \\
+ &\quad \Rightarrow [\textrm{Fully Connected} \rightarrow \textrm{ReLu}]\cdot \ell \\
+ &\quad \Rightarrow \textrm{Flatten} \Rightarrow \textrm{Camada de Saída},
+\end{split}
+\end{equation} em que $i, j, k, \ell$ são números inteiros que denotam a quantidade de repetições da operação associada perante multiplicação. Os valores destes inteiros foram: $i = 2$, $j = \{0,1\}$ (realização ou não das operações de Pooling e Dropout), $k = \{1,2\}$ e $\ell = \{ 1,2,3 \}$.\todo[inline]{Revisar estas repetições.}. Considerando esta abordagem de adaptação, foram então propostas $9$ CNNs diferentes a serem treinadas e testadas, conforme a abordagem de validação previamente descrita.
+
+% Complementar um pouco os parâmetros que você falou depois
+
+Além da avaliação individual do desempenho das CNNs propostas, considerou-se também a posterior combinação destas redes em um \emph{ensemble}. Para valoração da classificação final, ao invés de considerar as abordagens típicas de votação unânime ou majoritária adotadas por \emph{ensembles}, utilizou-se um modelo baseado em \emph{Boosting}, o XGBoost \cite{Chen:Boosting}. Este modelo recebe as saídas de todas as redes individuais e, após ter sido treinado com os exemplos da base de dados, decide dentre as classificações individuais qual a classificação final mais apropriada. Observa-se aqui uma modificação não-trivial em \emph{ensembles}: a votação mediada por um modelo inteligente. A Figura X ilustra a ideia considerada.
+
+\begin{figure}[!htb]
+    \centering
+    \caption{\emph{Ensemble} de CNNs com votação mediada por XGBoost.} \label{fig:ensemble}
+    \includegraphics[width=0.9\textwidth]{images/ensemble-elloa.png}
+\end{figure}
+
+
+
 
 O modelo proposto consiste de um conjunto de \emph{Convolutional Neural Networks} (CNN), onde cada elemento é responsável pela classificação da imagem de entrada em uma das Sete Expressões Faciais Universais \cite{}, por meio da produção de vetor de probabilidades. Que consiste na possibilidade de cada uma das expressões universais estarem sendo expressas pela face, na imagem. A determinação da classificação final, não segue as abordagens típicas da literatura, via maioria ou consenso. Pois, estes vetores de probabilidades foram utilizados, de maneira supervisionada, para treinar um modelo do tipo \emph{XGBoost}, que finalmente atribui o rótulo mais adequado à entrada. Tem-se então um \emph{emsemble} de CNN com processo decisório de classificação realizado de maneira não trivial por um modelo de \emph{Machine Learning}.
 
@@ -18,3 +44,5 @@ Para regularização dos modelos de CNN foi utilizado somente \emph{Dropout}, vi
 A arquitetura final dos modelos de CNN podem ser visualizados na Tabela \ref{tbl:arch}. Já a arquitetura utilizada pelo \emph{XGBoost} não pode ser mostrada, devido a esta ter mil árvores classificadoras, o que torna inviável a apresentação desta neste artigo.
 
 \input{tables/tbl_archs.tex}
+
+% TODO: Lembrar de falar da infra-estrutura para execução.

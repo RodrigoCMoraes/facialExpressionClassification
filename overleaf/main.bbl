@@ -5,14 +5,37 @@ Brink, H., Richards, J.~W., and Fetherolf, M. (2017).
 \newblock {\em Real-World Machine Learning}.
 \newblock Manning Publications, Estados Unidos.
 
+\bibitem[Chen and Guestrin 2016]{Chen:Boosting}
+Chen, T. and Guestrin, C. (2016).
+\newblock Xgboost: A scalable tree boosting system.
+\newblock In {\em Proceedings of the 22Nd {ACM} {SIGKDD} International
+  Conference on Knowledge Discovery and Data Mining}, KDD'16, pages 785--794,
+  New York, NY, USA. ACM.
+
+\bibitem[Chollet 2017]{Chollet:Livro}
+Chollet, F. (2017).
+\newblock {\em Deep Learning with Python}.
+\newblock Manning Publications, Shelter Island, New York, 1 edition.
+
 \bibitem[Kaggle 2013]{Kaggle:FER2013}
 Kaggle (2013).
 \newblock Challenges in representation learning: Facial expression recognition
   challenge.
 
+\bibitem[Khan et~al. 2018]{Khan:Livro}
+Khan, S., Rahmani, H., Shah, S. A.~A., and Bennamoun, M. (2018).
+\newblock {\em A Guide to Convolutional Neural Networks for Computer Vision}.
+\newblock Morgan and Claypool.
+
 \bibitem[Kubat 2015]{Kubat:Livro}
 Kubat, M. (2015).
 \newblock {\em An Introduction to Machine Learning}.
 \newblock Springer, Estados Unidos.
+
+\bibitem[Simonyan and Zisserman 2015]{VGG}
+Simonyan, K. and Zisserman, A. (2015).
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock In {\em 3rd International Conference on Learning Representations
+  (ICLR 2015)}, San Diego, EUA.
 
 \end{thebibliography}
