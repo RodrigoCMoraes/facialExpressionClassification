@@ -1,4 +1,6 @@
-A métrica para cálculo de desempenho dos modelos durante a competição no \emph{Kaggle} foi a acurácia, e o melhor resultado obtido na competição foi de 71.16\%. Os resultados de acurácia e \emph{F1 Micro} para os modelos de CNN testados, bem como \emph{Ensemble} obtiveram os mesmos valores, visto isso é apresentado somente o valor da medida \emph{F1 Score Micro}. Na Tabela \ref{tbl:fscore} observa-se os resultados para cada modelo de CNN, juntamente do resultado do \emph{Ensemble}.
+O modelo proposto conseguiu superar os seres humanos nesta base de dados, na tarefa de classificar as expressões faciais, visto que sua acurácia foi de 71.74\%\, enquanto a dos seres humanos é de 65\pm5\%\ \cite{goodfellow2013challenges}.
+
+Os resultados de acurácia e \emph{F1 Micro} para os modelos de CNN testados, bem como \emph{Ensemble} obtiveram os mesmos valores, visto isso é apresentado somente o valor da medida \emph{F1 Score Micro}. Na Tabela \ref{tbl:fscore} observa-se os resultados para cada modelo de CNN, juntamente do resultado do \emph{Ensemble}.
 
 \input{tables/tbl_fscore.tex}
 
@@ -6,15 +8,25 @@ A métrica para cálculo de desempenho dos modelos durante a competição no \em
 
 No modelo \textit{Ensemble} teve-se um total de 32.738.871 parâmetros treináveis, que é resultado da soma dos parâmetros treináveis dos modelos CNN, bem como do XGBoost. Onde o modelo de XGBoost possui uma quantidade pequena de parâmetros treináveis, em comparação com os modelos de CNN, pois, enquanto a quantidade deste está na ordem de milhares, os outros estão na ordem de milhões. Este comportamento se mostra coerente, se for levado em consideração as tarefas de cada modelo, que possuem complexidades bastante distintas.
 
-Os modelos de CNN mais profundos, consequentemente com maior número de parâmetros treináveis, foram os que obtiveram melhores desempenho individuais. Já os modelos mais rasos, apesar de obterem desempenho abaixo dos profundos, obtiveram os melhores resultados em classificar expressões específicas. Quantidade de parâmetros treináveis do \textit{Ensemble} podem ser visualizados na Tabela \cite{tbl:param}.
-
 \input{tables/tbl_param.tex}
+
+Os modelos de CNN mais profundos, consequentemente com maior número de parâmetros treináveis, foram os que obtiveram melhores desempenho individuais. Já os modelos mais rasos, apesar de obterem desempenho abaixo dos profundos, obtiveram os melhores resultados em classificar expressões específicas. Quantidade de parâmetros treináveis do \textit{Ensemble} podem ser visualizados na Tabela \ref{tbl:param}.
 
 Na Figura \ref{fig:emsemble} é apresentado o resultado do modelo utilizando \emph{Ensemble}. Onde o resultado final de desempenho foi de 71.74\% de acordo com a métrica \emph{F1 Micro}, ressaltando que seu valor de Acurácia possui o mesmo valor. E com este resultado o \emph{Ensemble} supera, por pouco, o modelo campeão da competição.
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=8cm]{images/cm_emsemble.png}
+    \includegraphics[width=9cm]{images/cm_emsemble.png}
     \caption{Matriz de Confusão do \emph{Ensemble} (CNN + \emph{XGBoost})}
     \label{fig:emsemble}
+\end{figure}
+
+Apesar do desbalanceamento da base de dados, a classificação da expressão de nojo obteve-se um dos melhores resultados \ref{fig:samples}, acompanhadas de surpresa e felicidade, com \textit{F1 Score} de
+78\%\, 83\%\ e 89\%\ respectivamente. As classificações das outras expressões também apresentaram bons resultados, todas com \textit{F1 Score} maior ou igual a 58\%\.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=8cm]{images/f1_bar.png}
+    \caption{F1 Score por Expressão}
+    \label{fig:f1_bar}
 \end{figure}
