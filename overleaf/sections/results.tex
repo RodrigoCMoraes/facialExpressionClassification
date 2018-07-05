@@ -1,10 +1,8 @@
-A métrica para cálculo de desempenho dos modelos durante a competição no \emph{Kaggle} foi a acurácia, e o melhor resultado obtido na competição foi de 71.161\%. Os resultados de acurácia e \emph{F1 Micro} para os modelos de CNN testados, bem com o \emph{Ensemble} obtiveram os mesmos valores, visto isso é apresentado somente o valor da medida \emph{F}. Na Tabela \ref{tbl:fscore} observa-se os resultados para cada modelo de CNN, juntamento do resultado do \emph{Emsemble} das CNN com \emph{XGBoost}.
+A métrica para cálculo de desempenho dos modelos durante a competição no \emph{Kaggle} foi a acurácia, e o melhor resultado obtido na competição foi de 71.16\%. Os resultados de acurácia e \emph{F1 Micro} para os modelos de CNN testados, bem com o \emph{Ensemble} obtiveram os mesmos valores, visto isso é apresentado somente o valor da medida \emph{F}. Na Tabela \ref{tbl:fscore} observa-se os resultados para cada modelo de CNN, juntamente do resultado do \emph{Ensemble}.
 
 É observado que o melhor classificador, modelo 7, individual de CNN, obteve 69.49\% enquanto que o pior, modelo 9, obteve 62.44\%. Ressaltando que cada classificador de CNN usado no \emph{Ensemble} obteve resultados melhores do que os outros, em determinada expressão ou bons resultados em todas as expressões, mas não se sobressaiu em nenhuma expressão específica. No caso do modelo 9, obteve bons resultados em quase todas as expressões, mas não obteve-se nenhum resultado melhor na classificação de determinada expressão em relação aos outros modelos. Já no caso do modelo 7, obteve-se o melhor resultado de classificação para expressão de surpresa.
 
 \input{tables/tbl_fscore.tex}
-
-As matrizes de confusão estão normalizadas. Cada célula foi colorida de acordo com a incidência de elementos contidos nesta antes da normalização(quanto maior a incidência mais escura é a cor da célula). O \emph{grid} de matrizes de confusões da Figura \ref{fig:grid} foi gerado a partir da parte \emph{PrivateTest} da base de dados, onde cada matriz corresponde a um modelo de CNN utilizado no \emph{Ensemble}. As classes verdadeiras do exemplo estão representadas pelas linhas, enquanto, as colunas representam as classes preditas pelo \emph{Ensemble}.
 
 Na Figura \ref{fig:emsemble} é apresentado o resultado do modelo utilizando \emph{Ensemble}. Onde o resultado final de desempenho foi de 71.74\% de acordo com a métrica \emph{F1 Micro}, ressaltando que seu valor de Acurácia possui o mesmo valor. E com este resultado o \emph{Ensemble} supera, por pouco, o modelo campeão da competição.
 
@@ -14,3 +12,6 @@ Na Figura \ref{fig:emsemble} é apresentado o resultado do modelo utilizando \em
     \caption{Matriz de Confusão do \emph{Ensemble} (CNN + \emph{XGBoost})}
     \label{fig:emsemble}
 \end{figure}
+
+Cada modelo de
+\input{tables/tbl_param.tex}
