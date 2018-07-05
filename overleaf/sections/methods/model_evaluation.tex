@@ -10,11 +10,16 @@ Obedecendo a uma partição do FER2013 previamente considerada em competições 
 	\subfloat[Teste]{\includegraphics[width=0.3\linewidth]{images/expression_distribution_test.png}}
 \end{figure}
 
-Levando em conta os modelos de Aprendizagem de Máquina para a tarefa em questão, é essencial que um número razoável de exemplos esteja disponível para um ajuste apropriado dos parâmetros treináveis. Considerando esta necessidade prática, os exemplos da partição de treinamento passaram por um processo de pseudo-expansão do tipo \emph{data augmentation}, em que novas imagens foram geradas a partir das previamente existentes considerando operações de rotação, espelhamento e \todo[inline]{complementar aqui}, colaborando para a posterior regularização dos modelos \cite{Chollet:Livro}. Ao final desta etapa, o conjunto de treinamento passou a conter X exemplos\todo{completar aqui}, um aumento de $y\%$ em relação ao seu tamanho original, mas preservando a distribuição de exemplos nas classes.
+Levando em conta os modelos de Aprendizagem de Máquina para a tarefa em questão, é essencial que um número razoável de exemplos esteja disponível para um ajuste apropriado dos parâmetros treináveis. Considerando esta necessidade prática, os exemplos da partição de treinamento passaram por um processo de pseudo-expansão do tipo \emph{data augmentation}, em que novas imagens foram geradas a partir das previamente existentes considerando operações de rotação, espelhamento e \todo[inline]{complementar aqui}, colaborando para a posterior regularização dos modelos \cite{Chollet:Livro}. Ao final desta etapa, o conjunto de treinamento passou a conter $1.3274E+15$ exemplos\todo{completar aqui}, um aumento de $3.6989E+10$ vezes em relação ao seu tamanho original, mas preservando a distribuição de exemplos nas classes.
 
-% Data augmentation na partição de treinamento
-% TODO: listagem das técnicas utilizadas no data augmentation
-% TODO: Quantidade de exemplos disponíveis na partição de treinamento no data augmentation
+Técnicas utilizadas no \textit{augmentation}
+\begin{itemize}
+	\item Rotação
+	\item Descolocamento horizontal
+	\item Descolamento vertical
+	\item Escala
+	\item Reflexão no eixo y
+\end{itemize}
 
 A métrica de desempenho adotada para comparação dos modelos na realização desta tarefa foi o Micro $F$-\emph{Score}. Embora a acurácia seja uma métrica mais popular, que descreve o percentual de acertos do modelo em relação ao total de previsões efetuadas, não fornece detalhes acerca dos acertos por classe. Para contornar esta dificuldade, o Micro $F$-\emph{Score} foi preferido, pois contempla a média harmônica entre precisão e revocação por classe ao passo que considera as diferentes frequências nas classes do problema \cite{Kubat:Livro}. Esta métrica é especialmente utilizada em problemas de classificação com classes desbalanceadas, ou seja, em situações análogas ao cenário considerado no escopo deste trabalho.
 
