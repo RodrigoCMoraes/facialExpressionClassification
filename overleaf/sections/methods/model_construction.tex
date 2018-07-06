@@ -14,12 +14,12 @@ As adaptações da VGG-16 levaram em conta diferentes quantidades de repetiçõe
 
 % Complementar um pouco os parâmetros que você falou depois
 
-Além da avaliação individual do desempenho das CNNs propostas, considerou-se também a posterior combinação destas redes em um \emph{ensemble}. Para valoração da classificação final, ao invés de considerar as abordagens típicas de votação unânime ou majoritária adotadas por \emph{ensembles}, utilizou-se um modelo baseado em \emph{Boosting}, o XGBoost \cite{Chen:Boosting}. Este modelo recebe as saídas de todas as redes individuais e, após ter sido treinado com os exemplos da base de dados, decide dentre as classificações individuais qual a classificação final mais apropriada. Observa-se aqui uma modificação não-trivial em \emph{ensembles}: a votação mediada por um modelo inteligente. A Figura X ilustra a ideia considerada.
+Além da avaliação individual do desempenho das CNNs propostas, considerou-se também a posterior combinação destas redes em um \emph{ensemble}. Para valoração da classificação final, ao invés de considerar as abordagens típicas de votação unânime ou majoritária adotadas por \emph{ensembles}, utilizou-se um modelo baseado em \emph{Boosting}, o XGBoost \cite{Chen:Boosting}. Este modelo recebe as saídas de todas as redes individuais e, após ter sido treinado com os exemplos da base de dados, decide dentre as classificações individuais qual a classificação final mais apropriada. Observa-se aqui uma modificação não-trivial em \emph{ensembles}: a votação mediada por um modelo inteligente. A Figura \ref{fig:ensemble} ilustra a ideia considerada.
 
 \begin{figure}[!htb]
     \centering
     \caption{\emph{Ensemble} de CNNs com votação mediada por XGBoost.} \label{fig:ensemble}
-    \includegraphics[width=0.9\textwidth]{images/ensemble-elloa.png}
+    \includegraphics[width=0.7\textwidth]{images/ensemble-elloa.png}
 \end{figure}
 
 
