@@ -4,16 +4,21 @@ A base de dados de expressões faciais utilizada para o desenvolvimento deste tr
 	\centering
   \captionof{figure}{Amostras de imagens faciais da base de dados FER2013.}
   \label{fig:samples}
-	\subfloat[Felicidade]{\includegraphics[width=0.15\linewidth]{images/sample_happy.png}}
-  \subfloat[Nojo]{\includegraphics[width=0.15\linewidth]{images/sample_disgust.png}}
-	\subfloat[Tristeza]{\includegraphics[width=0.15\linewidth]{images/sample_sad.png}}
 
-  \begin{subfigure}
-    \subfloat[Surpresa]{\includegraphics[width=0.15\linewidth]{images/sample_surprise.png}}
+	\begin{tabular}{@{}c@{}}
+		\subfloat[Felicidade]{\includegraphics[width=0.15\linewidth]{images/sample_happy.png}}
+		\subfloat[Nojo]{\includegraphics[width=0.15\linewidth]{images/sample_disgust.png}}
+		\subfloat[Tristeza]{\includegraphics[width=0.15\linewidth]{images/sample_sad.png}}
+	\end{tabular}
+
+	\vspace{\floatsep}
+
+  \begin{tabular}{@{}c@{}}
+		\subfloat[Surpresa]{\includegraphics[width=0.15\linewidth]{images/sample_surprise.png}}
   	\subfloat[Medo]{\includegraphics[width=0.15\linewidth]{images/sample_fear.png}}
   	\subfloat[Raiva]{\includegraphics[width=0.15\linewidth]{images/sample_angry.png}}
     \subfloat[Neutro]{\includegraphics[width=0.15\linewidth]{images/sample_neutral.png}}
-  \end{subfigure}
+  \end{tabular}
 \end{figure}
 
 Conforme ilustra a Figura \ref{fig:samples}, é interessante notar algumas características particulares das imagens do FER2013 que ressaltam a relevância desta base de dados. Observa-se que, embora as faces estejam centralizadas nas imagens, elementos como cortes de cabelo, barba, óculos e até mesmo mãos encontram-se presentes, diminuindo a distância entre os exemplos contidos nesta base de dados e aqueles passíveis de ocorrência em um cenário realístico.
