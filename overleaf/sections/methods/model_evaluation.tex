@@ -2,7 +2,7 @@ A base de dados em questão será usada para realização de tarefa de classific
 
 Obedecendo a uma partição do FER2013 previamente considerada em competições de Visão Computacional \cite{Kaggle:FER2013}, esta base de dados será dividida em $3$ partes, sendo: $80$\% dos exemplos para treinamento,  $10$\% dos exemplos para validação e $10$\% dos exemplos remanescentes para testes, a serem utilizados seguindo uma abordagem de \emph{holdout} de validação cruzada  \cite{Brink:MachineLearningLivro}.  Apenas os exemplos da partição de testes serão utilizados para obtenção das métricas de desempenho e comparação dos modelos. Conforme ilustra a Figura \ref{fig:particoes}, as partições preservam a distribuição de amostras por classe na base de dados original.
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
 	\centering
   	\caption{Distribuição das classes nas partições adotadas para o conjunto de dados.} \label{fig:particoes}
 	\subfloat[Treinamento]{\includegraphics[width=0.33\linewidth]{images/expression_distribution_training.png}}
