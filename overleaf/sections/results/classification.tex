@@ -1,4 +1,4 @@
-Para executar a avaliação do modelo proposto na tarefa de classificação, aplicou-se os exemplos contidos na partição de teste, de forma sequencial e supervisionada. Onde o rótulo fornecido pelo modelo para cada exemplo foi armazendo como resultado predito, para futura comparação com o rótulo verdadeiro, que é o contido na base dados.
+Para executar a avaliação do modelo proposto na tarefa de classificação, aplicou-se os exemplos contidos na partição de teste, de forma sequencial e supervisionada. Onde o rótulo fornecido pelo modelo para cada exemplo foi armazenado como resultado predito, para futura comparação com o rótulo verdadeiro, que é o contido na base dados.
 
 Após o processo de rotulação das amostras de teste pelo modelo, foram fornecidas as informações de dados rotulados, juntamente dos rótulos verdadeiros, a medida Micro \textit{F1 Score}, onde obteve-se como resultado o valor de $71.74$\%. Contudo, os trabalhos relacionados aqui apresentados fazem uso da medida de acurácia como resultados de desempenho, a qual foi obtida pelo mesmo método da medida Micro \textit{F1 Score}, e resultou em $71.74$\%. Resultados estes que superam os seres humanos nesta base de dados, que possuem acurácia de $65\pm5$\% \cite{goodfellow2013challenges}. Na Figura \ref{fig:emsemble} é mostrada a Matriz de Confusão Normalizada, com os valores resultantes do método de rotulação, onde as linhas representam a classe verdadeira, e as colunas as classes preditas pelo modelo.
 
@@ -18,6 +18,6 @@ Na diagonal principal da Matriz de Confusão Normalizada da Figura \ref{fig:emse
     \label{fig:f1_bar}
 \end{figure}
 
-Na Tabela \ref{tbl:results} é possível observar o resultado geral do modelo proposto, acompanhado dos modelos estado-da-arte. Evidenciando que o modelo proposto está um pouco abaixo do estado-da-arte, mas que ainda se mostra competitivo em relação a outros modelos da litetatura. 
+Na Tabela \ref{tbl:results} é possível observar o resultado geral do modelo proposto, acompanhado dos modelos estado-da-arte. Evidenciando que o modelo proposto está um pouco abaixo do estado-da-arte, mas que ainda se mostra competitivo em relação a outros modelos da litetatura.
 
 \input{tables/tbl_results.tex}

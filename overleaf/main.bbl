@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Al-Shabi et~al. 2016]{al2016facial}
+Al-Shabi, M., Cheah, W.~P., and Connie, T. (2016).
+\newblock Facial expression recognition using a hybrid cnn-sift aggregator.
+\newblock {\em arXiv preprint arXiv:1608.02833}.
+
 \bibitem[Brink et~al. 2017]{Brink:MachineLearningLivro}
 Brink, H., Richards, J.~W., and Fetherolf, M. (2017).
 \newblock {\em Real-World Machine Learning}.
@@ -17,6 +22,24 @@ Chollet, F. (2017).
 \newblock {\em Deep Learning with Python}.
 \newblock Manning Publications, Shelter Island, New York, 1 edition.
 
+\bibitem[Ekman and Friesen 1971]{Ekman1971}
+Ekman, P. and Friesen, W.~V. (1971).
+\newblock Constants across cultures in the face and emotion.
+\newblock {\em Journal of Personality and Social Psychology}, 17(2):124--129.
+
+\bibitem[Fasel and Luettin 2003]{Fasel2003}
+Fasel, B. and Luettin, J. (2003).
+\newblock Automatic facial expression analysis: a survey.
+\newblock {\em Pattern Recognition}, 36(1):259--275.
+
+\bibitem[Goodfellow et~al. 2013]{goodfellow2013challenges}
+Goodfellow, I.~J., Erhan, D., Carrier, P.~L., Courville, A., Mirza, M., Hamner,
+  B., Cukierski, W., Tang, Y., Thaler, D., Lee, D.-H., et~al. (2013).
+\newblock Challenges in representation learning: A report on three machine
+  learning contests.
+\newblock In {\em International Conference on Neural Information Processing},
+  pages 117--124. Springer.
+
 \bibitem[Kaggle 2013]{Kaggle:FER2013}
 Kaggle (2013).
 \newblock Challenges in representation learning: Facial expression recognition
@@ -27,15 +50,51 @@ Khan, S., Rahmani, H., Shah, S. A.~A., and Bennamoun, M. (2018).
 \newblock {\em A Guide to Convolutional Neural Networks for Computer Vision}.
 \newblock Morgan and Claypool.
 
+\bibitem[Kim et~al. 2016]{Kim2016FusingAA}
+Kim, B.-K., Dong, S.-Y., Roh, J., min Kim, G., and Lee, S.-Y. (2016).
+\newblock Fusing aligned and non-aligned face information for automatic affect
+  recognition in the wild: A deep learning approach.
+\newblock {\em 2016 IEEE Conference on Computer Vision and Pattern Recognition
+  Workshops (CVPRW)}, pages 1499--1508.
+
 \bibitem[Kubat 2015]{Kubat:Livro}
 Kubat, M. (2015).
 \newblock {\em An Introduction to Machine Learning}.
 \newblock Springer, Estados Unidos.
+
+\bibitem[LeCun et~al. 2015]{lecun2015deep}
+LeCun, Y., Bengio, Y., and Hinton, G. (2015).
+\newblock Deep learning.
+\newblock {\em nature}, 521(7553):436.
+
+\bibitem[Lindeberg 2012]{lindeberg2012scale}
+Lindeberg, T. (2012).
+\newblock Scale invariant feature transform.
+
+\bibitem[Pantic 2009]{Pantic2009fea}
+Pantic, M. (2009).
+\newblock {\em Facial Expression Analysis}, volume~6, pages 400--406.
+
+\bibitem[Pramerdorfer and Kampel 2016]{DBLP:journals/corr/PramerdorferK16}
+Pramerdorfer, C. and Kampel, M. (2016).
+\newblock Facial expression recognition using convolutional neural networks:
+  State of the art.
+\newblock {\em CoRR}, abs/1612.02903.
 
 \bibitem[Simonyan and Zisserman 2015]{VGG}
 Simonyan, K. and Zisserman, A. (2015).
 \newblock Very deep convolutional networks for large-scale image recognition.
 \newblock In {\em 3rd International Conference on Learning Representations
   (ICLR 2015)}, San Diego, EUA.
+
+\bibitem[Tang 2013]{DBLP:journals/corr/Tang13}
+Tang, Y. (2013).
+\newblock Deep learning using support vector machines.
+\newblock {\em CoRR}, abs/1306.0239.
+
+\bibitem[Taylor and Nitschke 2017]{DBLP:journals/corr/abs-1708-06020}
+Taylor, L. and Nitschke, G. (2017).
+\newblock Improving deep learning using generic data augmentation.
+\newblock {\em CoRR}, abs/1708.06020.
 
 \end{thebibliography}

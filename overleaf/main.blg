@@ -1,49 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: sbc.bst
 Database file #1: sbc-template.bib
 Warning--entry type for "Kaggle:FER2013" isn't style-file defined
---line 1 of file sbc-template.bib
-You've used 7 entries,
+--line 139 of file sbc-template.bib
+Warning--empty journal in lindeberg2012scale
+Warning--empty publisher in Pantic2009fea
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            516 strings with 4725 characters,
-and the built_in function-call counts, 2431 in all, are:
-= -- 235
-> -- 88
-< -- 6
-+ -- 32
-- -- 28
-* -- 175
-:= -- 431
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 46
-chr.to.int$ -- 7
-cite$ -- 7
-duplicate$ -- 111
-empty$ -- 179
-format.name$ -- 39
-if$ -- 485
+            585 strings with 6728 characters,
+and the built_in function-call counts, 7005 in all, are:
+= -- 683
+> -- 283
+< -- 17
++ -- 98
+- -- 94
+* -- 548
+:= -- 1213
+add.period$ -- 53
+call.type$ -- 18
+change.case$ -- 132
+chr.to.int$ -- 18
+cite$ -- 20
+duplicate$ -- 294
+empty$ -- 484
+format.name$ -- 124
+if$ -- 1396
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 37
-num.names$ -- 21
-pop$ -- 55
+missing$ -- 22
+newline$ -- 90
+num.names$ -- 54
+pop$ -- 133
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 136
 quote$ -- 0
-skip$ -- 80
+skip$ -- 238
 stack$ -- 0
-substring$ -- 120
-swap$ -- 15
-text.length$ -- 1
+substring$ -- 411
+swap$ -- 55
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
-warning$ -- 0
-while$ -- 17
+type$ -- 98
+warning$ -- 2
+while$ -- 52
 width$ -- 0
-write$ -- 93
-(There was 1 warning)
+write$ -- 232
+(There were 3 warnings)
