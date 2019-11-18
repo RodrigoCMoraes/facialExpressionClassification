@@ -9,7 +9,7 @@ Some data has to be on Google Drive, because Github limit size of files. But thi
 
 | Task description | Status |
 |-|-|
-|Write for paper [ENIAC 2018](https://bracis2018.mybluemix.net/ENIAC.html) | DONE |
+|Write for [paper](https://sol.sbc.org.br/index.php/eniac/article/view/4448) [ENIAC 2018](https://bracis2018.mybluemix.net/ENIAC.html) | DONE |
 |Translate paper wrote for [ENIAC 2018](https://bracis2018.mybluemix.net/ENIAC.html) to English | PEND |
 |Create script that uses model created to real time Facial Expression Recognition | PEND |
 |Document all notebooks, codes, etc... | PEND |
