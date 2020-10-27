@@ -1,0 +1,133 @@
+\documentclass{beamer}
+\geometry{papersize={12.8cm,7.6cm}}
+% \documentclass[aspectratio=169]{beamer}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES & SETUP
+%----------------------------------------------------------------------------------------
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+
+\usepackage[useregional]{datetime2}
+\usepackage{graphicx,url}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\definecolor{lightblue}{RGB}{0,191,255}
+\usepackage[textsize=tiny,backgroundcolor=lightblue,linecolor=lightblue]{todonotes}
+\usepackage[bf,sf,footnotesize,indent,justification=centering]{caption}
+\usepackage[caption=true,font=footnotesize]{subfig}
+\usepackage{ textcomp }
+\usepackage{color, colortbl}
+% \definecolor{name}{system}{definition}
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.5,1,1}
+
+\captionsetup[subfigure]{
+    justification=centering,
+    labelfont={bf,sf},
+    textfont={bf,sf,footnotesize},
+    singlelinecheck=off,justification=centering
+}
+\captionsetup[figure]{
+    justification=centering,
+    labelfont={bf,sf},
+    textfont={bf,sf,footnotesize},
+    singlelinecheck=off
+}
+\captionsetup[table]{
+    justification=centering,
+    labelfont={bf,sf},
+    textfont={bf,sf,footnotesize},
+    singlelinecheck=off,
+    justification=centering
+}
+
+\mode<presentation> {
+    \usetheme{Frankfurt}
+    \usecolortheme{whale}
+    \setbeamertemplate{navigation symbols}{}
+    \setbeamertemplate{footline}[page number]
+}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\input{cover.tex}
+\apptocmd{\frame}{}{\justifying}{}
+
+\begin{document}
+
+\begin{frame}[label=firstframe]
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sumário}
+    \tableofcontents
+\end{frame}
+
+%------------------------------------------------
+\section{Introdução}
+\input{introduction.tex}
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Base de dados}
+\input{dataset.tex}
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Abordagem}
+\input{approach.tex}
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Experimentos}
+\input{experiment.tex}
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Resultados}
+\input{results.tex}
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Trabalhos relacionados}
+\input{related_works.tex}
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Conclusão}
+\input{conclusion.tex}
+%------------------------------------------------
+
+\section{Referências}
+\begin{frame}[allowframebreaks]
+\frametitle{Referências}
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+\end{frame}
+
+% \begin{frame}{Código Fonte}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{img/source_code.png}
+% \end{figure}
+%     \bigskip
+%     https://github.com/RodrigoCMoraes/facialExpressionClassification
+% \end{frame}
+
+\begin{frame}{Agradecimentos}
+    \begin{center}
+        \Huge Obrigado
+    \end{center}
+\end{frame}
+
+\againframe{firstframe}
+
+\end{document}

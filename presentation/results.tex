@@ -1,0 +1,62 @@
+\begin{frame}{Resultados}
+    
+    \begin{table}[!htb]
+\centering
+\caption{Micro \textit{F1 Score} de CNNs}
+\label{tbl:fscore}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+Modelo                    & \multicolumn{1}{c}{Micro F1 Score} & \begin{tabular}[c]{@{}c@{}}Parâmetros\\Treináveis\end{tabular} \\ \midrule 
+\rowcolor{LightCyan}1                         & 0,689                 & 15.250.887                                                           \\
+2                         & 0,676                 & 1.778.247                                                            \\
+3                         & 0,660                 & 2.134.471                                                            \\
+4                         & 0,679                 & 1.778.247                                                            \\
+5                         & 0,666                 & 1.189.511                                                            \\
+6                         & 0,678                 & 1.780.103                                                            \\
+\rowcolor{LightCyan}7                         & 0,694             & 6.653.599                                                            \\
+8                         & 0,628                 & 1.186.231                                                            \\
+\rowcolor{LightCyan}9                         & 0,624                 & 923.575                                                              \\
+% Ensemble                  & \textbf{0,7174700473669546}                 & 64.000                                                               \\
+\toprule
+\multicolumn{1}{l}{Total} &                                    & 32.674.871                                                          \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Resultados}
+
+\begin{itemize}
+    \item 7 modelos especializados
+    \item 2 modelos gerais
+    \item 1 modelo de votação
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{img/ensemble-elloa.png}
+    \caption{Ensemble de Redes Convolucionais Neurais e votação inteligente.}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Resultados}
+
+ \begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/f1_bar.png}
+    \caption{F1-Score de Ensemble por expressão.}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Resultados}
+
+ \begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/cm_emsemble.png}
+    \caption{Matriz de Confusão do Ensemble}
+\end{figure}
+
+\end{frame}
